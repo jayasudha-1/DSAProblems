@@ -1,4 +1,19 @@
 var findClosestNumber = function(nums) {
+    let closest = nums[0];
+    for (let num of nums){
+        if(Math.abs(num)< Math.abs(closest)){
+            closest =num;
+        }else if(Math.abs(num)===Math.abs(closest)){
+            closest=Math.max(num,closest);
+        }
+    }
+    return closest;
+}
+/*
+
+
+
+var findClosestNumber = function(nums) {
     let closest = nums[0]; // Initialize closest to the first element of the array
     
     for (let i = 1; i < nums.length; i++) {
@@ -13,3 +28,4 @@ var findClosestNumber = function(nums) {
 };
 // Example usage:
 console.log(findClosestNumber([2, -1, 1])); // Output: 1
+*/
