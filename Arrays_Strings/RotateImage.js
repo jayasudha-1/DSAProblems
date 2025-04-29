@@ -10,3 +10,5 @@ var rotate = function(matrix) {
             matrix[i].reverse();
          }
     };
+
+/*I am doing transpose ; converting rows to column and then reverse the row*/
